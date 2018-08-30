@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "trimmerjs": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "database": "trimmerjs",
+    "password": "0000",
+    "name": "trimmerjs",
+    "user": "root",
+    "connector": "mysql",
+    "connectTimeout": 20000,
+    "acquireTimeout": 20000
+  }
+}

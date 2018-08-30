@@ -1,0 +1,61 @@
+{
+  "name": "MyUsers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "mysql": {
+    "schema": "trimmerjs",
+    "table": "users"
+  },
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "mysql": {
+        "columnName": "id",
+        "dataType": "int",
+        "nullable": "N"
+      }
+    },
+    "firstName": {
+      "type": "string",
+      "required": true,
+      "mysql": {
+        "columnName": "first_name",
+        "dataType": "varchar",
+        "nullable": "N"
+      }
+    },
+    "lastName": {
+      "type": "string",
+      "mysql": {
+        "columnName": "last_name",
+        "dataType": "varchar",
+        "nullable": "Y"
+      }
+    },
+    "email": {
+      "type": "string",
+      "required": true,
+      "mysql": {
+        "columnName": "email",
+        "dataType": "varchar",
+        "nullable": "N"
+      }
+    },
+    "password": {
+      "type": "string",
+      "required": true,
+      "mysql": {
+        "columnName": "password",
+        "dataType": "varchar",
+        "nullable": "N"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
