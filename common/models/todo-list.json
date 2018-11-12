@@ -1,0 +1,62 @@
+{
+  "name": "TodoList",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "mysql": {
+    "schema": "trimmerjs",
+    "table": "todo_list"
+  },
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "todoId": {
+      "type": "number",
+      "id": true,
+      "mysql": {
+        "columnName": "todo_list_id",
+        "dataType": "int",
+        "nullable": "Y"
+      }
+    },
+    "id": {
+      "type": "number",
+      "mysql": {
+        "columnName": "id",
+        "dataType": "int",
+        "nullable": "N"
+      }
+    },
+    "title": {
+      "type": "string",
+      "mysql": {
+        "columnName": "todo_title",
+        "dataType": "varchar",
+        "nullable": "N",
+        "dataLength": 20
+      }
+    },
+    "description": {
+      "type": "string",
+      "mysql": {
+        "columnName": "todo_desc",
+        "dataType": "varchar",
+        "nullable": "Y",
+        "dataLength": 240
+      }
+    },
+    "finishedInd": {
+      "type": "string",
+      "mysql": {
+        "columnName": "finished_ind",
+        "dataType": "varchar",
+        "nullable": "Y",
+        "dataLength": 1
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
